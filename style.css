@@ -1,0 +1,137 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f5f5dc;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 3px solid #000080;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #000080;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.card {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px dashed #000080;
+}
+
+#question-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #000;
+    min-height: 50px;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.option-button {
+    background-color: #e6e6fa;
+    border: 2px solid #4682b4;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.option-button:hover {
+    background-color: #dcdcdc;
+    border-color: #5f9ea0;
+}
+
+.option-button.selected {
+    background-color: #4682b4;
+    border-color: #4682b4;
+    color: #fff;
+}
+
+.option-button.correct {
+    background-color: #3cb371;
+    border-color: #2e8b57;
+    color: #fff;
+}
+
+.option-button.incorrect {
+    background-color: #dc143c;
+    border-color: #b22222;
+    color: #fff;
+}
+
+.button {
+    background-color: #000080;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #4169e1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#results-container h2, #final-results-container h2 {
+    color: #000080;
+    font-size: 2rem;
+}
+
+#score, #percentage {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #008080;
+}
+
+/* Gaya untuk Soal Esai */
+.essay-item {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.essay-item p {
+    font-size: 1.2rem;
+    color: #000080;
+}
+
+.essay-item textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    border: 1px solid #4682b4;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    resize: vertical;
+}

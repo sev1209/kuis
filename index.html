@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tes IQ Kamu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tes IQ Online</h1>
+        </header>
+        <main id="quiz-container">
+            <div id="quiz">
+                <div id="question-box" class="card">
+                    <h2 id="question-text"></h2>
+                    <div id="options-container" class="options-grid"></div>
+                    <button id="next-button" class="button">Selanjutnya</button>
+                </div>
+            </div>
+            <div id="results-container" class="card" style="display: none;">
+                <h2>Hasil Tes</h2>
+                <p>Skor Pilihan Ganda Anda: <span id="score">0</span> / 20</p>
+                <p>Persentase Kemampuan: <span id="percentage">0%</span></p>
+            </div>
+            <div id="essay-container" class="card" style="display: none;">
+                <h2>Soal Esai</h2>
+                <div id="essay-questions"></div>
+                <button id="submit-essay-button" class="button">Kirim Jawaban</button>
+            </div>
+            <div id="final-results-container" class="card" style="display: none;">
+                <h2>Terima Kasih!</h2>
+                <p>Jawaban Anda telah disimpan.</p>
+                <button id="restart-final-button" class="button">Mulai Ulang</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
